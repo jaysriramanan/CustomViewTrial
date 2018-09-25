@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+        <com.example.test.customviewtrial.TouchEventView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/drawingview"
+            android:background="@android:color/holo_green_light"/>
+
+        <com.example.test.customviewtrial.MyCustomView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/myCustomView"
+            app:label="Hello World"
+            app:labelColor="@color/colorAccent"
+            app:circleColor="@color/colorPrimary"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:hint="Enter text to change in custom view" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Text"
+            android:id="@+id/button"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</ScrollView>
